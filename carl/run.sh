@@ -5,6 +5,8 @@ python kfkd_v1.py fit
 #your first model:
 #modified by carl
 #train one 'column' at a time
+#we pay additional overhead time of compiling theano in each run
+#we gain the benefit of less memory pressure for gpu
 
 python kfkd_v1.py fit_specialists net.pickle 0
 python kfkd_v1.py fit_specialists net.pickle 1
